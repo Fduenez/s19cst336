@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title align = "center">The Seasons</title>
+        <style>
+            .top{
+               display:flex;
+               flex-direction:row;
+               align-items:space-around;
+            }
+            .bottom{
+                display:flex;
+                flex-direction:row;
+                justify-content:space-around;
+            }
+            #all{
+                margin: 35px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class = "top" id = "all">
+            <div class="topLeft" >
+                <img src ="img/spring.png" style="height:300px;">
+            </div>
+            <div class="topRight">
+                <img src ="img/summer.png" style="height:300px;">
+            </div>
+        </div>
+            
+        <div class = "bottom" id = "all">
+            <div class="bottomLeft">
+                <img src ="img/fall.png" style="height:300px;">
+            </div>
+            
+            <div class="bottomRight">
+                <img src ="img/winter.png" style="height:300px;">
+            </div>
+        </div>
     </body>
 </html>
