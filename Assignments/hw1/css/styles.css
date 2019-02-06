@@ -1,0 +1,103 @@
+h2
+{
+    font-family: 'Pacifico', cursive; 
+    font-size:3em; 
+    margin-bottom: 0px
+}
+body
+{
+    background-color:#FAFAFA ;
+    color:#616161;
+}
+header, nav
+{
+    text-align:center;
+}
+footer
+{
+    text-align:center;
+}
+nav a
+{
+    /* links within "nav" container*/
+    padding:15px;
+    padding-bottom:4px;
+    font-size:1.8em;
+    text-decoration:none;  /*removes underline */
+    color:#616161;           /*by default, links are blue */
+}
+nav a:hover, #current
+{   /*pseudo class*/
+    border-bottom:2px gray solid;
+    font-size:2em;
+    transition: .9s;  /*transition effect */
+}
+
+#text #pic, #pic2
+{
+    float:left;
+}
+#pic img
+{
+    width: 300%;
+}
+#pic2 img
+{
+    width: 200%;
+}
+#pic3 img
+{
+    height:auto;
+    width: 100%;
+}
+
+#content{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#text{
+    flex: 4;
+}
+
+#pic{
+    flex: 1;
+}
+
+#pic2
+{
+    flex: 1;
+}
+#pic3
+{
+    flex: 1;
+}
+footer
+{
+    clear:left;
+    font-size:0.6em;
+    color:#616161;
+}
+footer img
+{
+      padding-top:0.5%;
+      width: 10%;
+      height: auto;
+}
+p
+{
+    font-size: 1.3em;
+}
+.list
+{
+    list-style-type: square;
+}
+#bold
+{
+    color:#609dff;
+}
+
+#half {
+    width : 50%;
+}
