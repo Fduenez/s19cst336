@@ -30,10 +30,13 @@ p
     height:auto;
 }
 .top{
-    background-color:#f9b57a;
+    text-align: center;
+    font-family: 'arial rounded mt bold';
+    font-style: italic;
+    font-size: 180%;
+    background-color:#b5cbe0;
     color:#20385e;
     border-radius:20px;
-    height:80px;
+    height:90px;
     width:auto;
 }
-
