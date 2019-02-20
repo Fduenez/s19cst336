@@ -1,0 +1,39 @@
+#img1, #img2, #img3, #img4, #img5, #img6
+{
+    width: 50px;
+    height:auto;
+}
+#try, #flex2, #flex3, #flex4, #flex5, #flex6
+{
+    display:flex;
+}
+body
+{
+    background-color: #94bcfc;
+    
+}
+.top h1, h3
+{
+   text-align: center;
+}
+p
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.checker
+{
+    margin-left:50%;
+    margin-right:50%;
+    color: #71c120;
+    width:65px;
+    height:auto;
+}
+.top{
+    background-color:#f9b57a;
+    color:#20385e;
+    border-radius:20px;
+    height:80px;
+    width:auto;
+}
+

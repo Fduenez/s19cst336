@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokemon</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form>
+        <div class="input-group">
+            <!--<label for="feedback"><h1>Guess that pokemon by its description!!!</h1></label>-->
+            <div class = "top">
+                <h1>Pokemon</h1>
+                <h3></h3>
+            </div>
+            <div>
+                <p> Its fiery rear end is fueled by gas made in its belly. Even rain can't extinguish the fire.</p>
+            </div>
+            <div id="try">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon1" name="question1" value="1">
+                        <label for="pokemon1">Charmander</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon2" name="question1" value="2">
+                        <label for="pokemon2">salamander</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="pokemon3" name="question1" value="3">
+                        <label for="pokemon3">chimchar</label>
+                    </div>
+                </div>
+                
+                <div id="results1"></div>
+            </div>
+            
+            <div>
+                <p> Which legendary pokemon did ash see in the first episodes of pokemon?.</p>
+            </div>
+            <div id="try">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon4" name="question2" value="1">
+                        <label for="pokemon4">Lugia</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon5" name="question2" value="2">
+                        <label for="pokemon5">Ho-oh</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="pokemon6" name="question2" value="3">
+                        <label for="pokemon6">Moltres</label>
+                    </div>
+                </div>
+                
+                <div id="results2"></div>
+            </div>
+            <div>
+                <p> What is your favorite pokemon from these? </p>
+            </div>
+            <div>
+                <input class="favorite" type="checkbox" id="charmander" name="charmander" value="1">
+                    <label for="charmander">Charmander</label>
+                </div>
+                <div>
+                    <input class="favorite"type="checkbox" id="squirtle" name="squirtle" value="2">
+                    <label for="squirtle">squirtle</label>
+                </div>
+        
+                <div>
+                    <input class="favorite" type="checkbox" id="bulbasaur" name="bulbasaur" value="3">
+                    <label for="bulbasaur">bulbasaur</label>
+            </div>
+            <div id="flex2">
+            
+                <div id="pic"></div>
+                <div id="pic2"></div>
+                <div id="pic3"></div>
+            </div>
+            
+            <div>
+                <div id="guess"> <img id="pic4" src="img/pikachu.png"></div>
+                <select class="pokemon ">
+                    <option value="Pikachu">Pikachu</option>
+                    <option value="dedenne">dedenne</option>
+                    <option value="pachirisu">pachirisu</option>
+                    <option value="mimikyu">mimikyu</option>
+                </select>
+                <div id="guessCorrect">
+                    
+                </div>
+                
+            </div>
+            <div>
+                <p>How old were you when you left pallet town?</p>
+                <input class="" type="text" id="age" name="entry">
+                <label for="age"></label>
+            </div>
+            <div>
+                <p>How many years past since you left?</p>
+                <input class="" type="text" id="years" name="entry" >
+                <label for="years"></label>
+            </div>
+            <div id= "text_entry">
+                <p></p>
+            </div>
+            <div>
+                <button class="checker" type="button">Submit Answers</button>
+            </div>
+           
+        </div>
+    </form>
+    <!--Whether or not correct goes here-->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var correctAnswer1 = "3";
+        var correctAnswer2 = "2";
+        
+        var correct = 0;
+        $("button.checker").on("click", function(e) {
+            // Don't need e.preventDefault() because we have <button type="button">
+            var selectedRadio1 = $("input[name='question1']:checked");
+            var selectedNameValue1 = selectedRadio1.val();
+            var selectedRadioId1 = selectedRadio1.attr("id");
+            var selectedLabelHtml1 = $("label[for='" + selectedRadioId1 + "']").html(); 
+            
+            if (selectedNameValue1 === correctAnswer1) {
+                $("#results1").html('<img id="img1" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results1").html('<img id="img1" src="img/wrong.png" />');
+                //$("#results1").html(selectedLabelHtml1 + " is NOT correct").css("color", "red");
+            }
+            
+            var selectedRadio2 = $("input[name='question2']:checked");
+            var selectedNameValue2 = selectedRadio2.val();
+            var selectedRadioId2 = selectedRadio1.attr("id");
+            var selectedLabelHtml2 = $("label[for='" + selectedRadioId2 + "']").html(); 
+            
+            if (selectedNameValue2 === correctAnswer2) {
+                $("#results2").html('<img id="img2" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results2").html('<img id="img2" src="img/wrong.png" />');
+            }
+            
+            var selectedbox1 = $("input[name='charmander']:checked");
+            var selectedbox2 = $("input[name='squirtle']:checked");
+            var selectedbox3 = $("input[name='bulbasaur']:checked");
+            
+            // var selectedNameValue1 = selectedRadio1.val();
+            // var selectedRadioId1 = selectedRadio1.attr("id");
+            // var selectedLabelHtml1 = $("label[for='" + selectedRadioId1 + "']").html(); 
+            
+            if (selectedbox1.val()) {
+                $("#pic").html('<img id="img2" src="img/charmander.png" />');
+            }
+                        
+            if (selectedbox2.val()) {
+                $("#pic2").html('<img id="img2" src="img/squirtle.png" />');
+            }
+                        
+            if (selectedbox3.val()) {
+                $("#pic3").html('<img id="im" src="img/bulbasaur.png" />');
+            }
+            var selPokemon =  $('.pokemon option:selected')
+            var name = selPokemon.val();
+            if(name ==="Pikachu")
+            {
+                $("#guess").html('<img id="pic5" src="img/pika.png" />');
+                $("#guessCorrect").html('You guessed it correctly');
+                correct++;
+            }
+            else
+            {
+                $("#guess").html('<img id="pic5" src="img/meme.jpg" />');
+                 $("#guessCorrect").html('You guessed it wrong');
+            }
+            
+            var age = $('#age').val();
+            
+            
+            var years = $('#years').val();
+           
+            if(correct === 3)
+            {
+                 $("#text_entry").html("you left pallet town at age " + age + " and wandered for " + years  + " years. With the knowledge you have gathered. you have become champion.");
+            }
+            else if(correct === 2)
+            {
+                $("#text_entry").html("you left pallet town at age " + age + " and wandered for " + years  + " years. You were able to become a gym leader as your job");
+            }
+            else
+            {
+                $("#text_entry p").html("you left pallet town at age " + age + " and wandered for " + years  + " years. You have failed miserably and went back home.");
+            }
+            correct = 0;
+            console.log("selected name value for question 1", selectedNameValue1);
+
+        });
+        
+    </script>
+</body>
+
+</html>

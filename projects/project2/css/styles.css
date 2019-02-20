@@ -1,0 +1,71 @@
+#results1 #img1 
+{
+    width: 25px;
+    height:auto;
+}
+#results2 #img2
+{
+    width: 25px;
+    height:auto;
+}
+#pic img,
+{
+    width: 100px;
+    height:auto;
+}
+#pic2 img
+{
+    width:100px;
+    height:auto
+}
+#pic3 img
+{
+    width:100px;
+    height:auto
+}
+
+#guess #pic5
+{
+    width:50%;
+    height:auto;
+}
+#try, #flex2
+{
+    display:flex;
+}
+body
+{
+    background-color: #94bcfc;
+    
+}
+.top h1, h3
+{
+   text-align: center;
+}
+p
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.checker
+{
+    margin-left:50%;
+    margin-right:50%;
+    width: 150px;
+    height: 100px;
+    color: white;
+    background-color: green;
+    border-radius: 25px;
+    height:auto;
+}
+.top{
+    background-color:#6aa0f7;
+    color:#20385e;
+    border-radius:20px;
+    height:80px;
+    width:auto;
+}
+#text_entry
+{
+    font-size:1.2em;
+}

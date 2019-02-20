@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokemon</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form>
+        <div class="input-group">
+            <!--<label for="feedback"><h1>Guess that pokemon by its description!!!</h1></label>-->
+            <div class = "top">
+                <h1>Guess that pokemon by its description!!!</h1>
+                <h3></h3>
+            </div>
+            <div>
+                <p> 1. Its fiery rear end is fueled by gas made in its belly. Even rain can't extinguish the fire.</strong> </p>
+            </div>
+            <div id="try">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon1" name="question1" value="1">
+                        <label for="pokemon1">Charmander</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon2" name="question1" value="2">
+                        <label for="pokemon2">salamander</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="pokemon3" name="question1" value="3">
+                        <label for="pokemon3">chimchar</label>
+                    </div>
+                </div>
+                
+                <div id="results1"></div>
+            </div>
+            
+            <div>
+                <p> 2. shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokemon to swim at high speeds. </p>
+            </div>
+            <div id="flex2">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon4" name="question2" value="1">
+                        <label for="pokemon4">Squirtle</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon5" name="question2" value="2">
+                        <label for="pokemon5">Piplup</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon6" name="question2" value="3">
+                        <label for="pokemon6">sharpedo</label>
+                    </div>
+                </div>
+                
+                <div id="results2"></div>
+            </div>
+            <div>
+                <p> 3. The antenna on its head captures radio waves from the world of spirits that command it to take people there. </p>
+            </div>
+            <div id = "flex3">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon7" name="question3" value="1">
+                        <label for="pokemon7">Gengar</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon8" name="question3" value="2">
+                        <label for="pokemon8">Mesprit</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon9" name="question3" value="3">
+                        <label for="pokemon9">Duscknoir</label>
+                    </div>
+                </div>
+                
+                <div id="results3"></div>
+                
+            </div>
+            <div>
+                <p> 4. While sleeping, it generates electricity in the sacs in its cheeks. If it's not getting enough sleep, it will be able to use only weak electricity. </p>
+            </div>
+            <div id="flex4">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon10" name="question4" value="1">
+                        <label for="pokemon10">Dedenne</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon11" name="question4" value="2">
+                        <label for="pokemon11">Pikachu</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon12" name="question4" value="3">
+                        <label for="pokemon12">pichu</label>
+                    </div>
+                </div>
+                
+                <div id="results4"></div>
+                
+            </div>
+            <div>
+                <p> 5. capable of circling the globe in just 16 hours. It is a kindhearted Pokemon that leads lost and foundering ships in a storm to the safety of land.</p>
+            </div>
+            <div id="flex5">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon13" name="question5" value="1">
+                        <label for="pokemon13">Gyarados</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon14" name="question5" value="2">
+                        <label for="pokemon14">Dragonite</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon15" name="question5" value="3">
+                        <label for="pokemon15">Garchomp</label>
+                    </div>
+                </div>
+                
+                <div id="results5"></div>
+            </div>
+            <div>
+                <p> 6. The lightning-wielding guardian deity of Melemele, Tapu Koko is brimming with curiosity and appears before people from time to time.</p>
+            </div>
+            <div id="flex6">
+                <div>
+                    <div>
+                        <input type="radio" id="pokemon16" name="question6" value="1">
+                        <label for="pokemon16">Tapu Bulu</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon17" name="question6" value="2">
+                        <label for="pokemon17">Tapu Koko</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pokemon18" name="question6" value="3">
+                        <label for="pokemon18">Tapu Lele</label>
+                        
+                    </div>
+                </div>
+                <div id="results6"></div>
+                
+            </div>
+                <button class="checker" type="button">Submit Answers</button>
+            </div>
+           
+        </div>
+    </form>
+    <!--Whether or not correct goes here-->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var correctAnswer1 = "1";
+        var correctAnswer2 = "1";
+        var correctAnswer3 = "3";
+        var correctAnswer4 = "2";
+        var correctAnswer5 = "2";
+        var correctAnswer6 = "2";
+        
+        var correct = 0;
+        $("button.checker").on("click", function(e) {
+            // Don't need e.preventDefault() because we have <button type="button">
+            var selectedRadio1 = $("input[name='question1']:checked");
+            var selectedNameValue1 = selectedRadio1.val();
+            var selectedRadioId1 = selectedRadio1.attr("id");
+            var selectedLabelHtml1 = $("label[for='" + selectedRadioId1 + "']").html(); 
+            
+            if (selectedNameValue1 === correctAnswer1) {
+                $("#results1").html('<img id="img1" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results1").html('<img id="img1" src="img/wrong.png" />');
+                //$("#results1").html(selectedLabelHtml1 + " is NOT correct").css("color", "red");
+            }
+            
+            var selectedRadio2 = $("input[name='question2']:checked");
+            var selectedNameValue2 = selectedRadio2.val();
+            var selectedRadioId2 = selectedRadio2.attr("id");
+            var selectedLabelHtml2 = $("label[for='" + selectedRadioId2 + "']").html(); 
+            
+            if (selectedNameValue2 === correctAnswer2) {
+                $("#results2").html('<img id="img2" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results2").html('<img id="img2" src="img/wrong.png" />');
+                //$("#results2").html(selectedLabelHtml2 + " is NOT correct").css("color", "red");
+            }
+            
+            var selectedRadio3 = $("input[name='question3']:checked");
+            var selectedNameValue3 = selectedRadio3.val();
+            var selectedRadioId3 = selectedRadio3.attr("id");
+            var selectedLabelHtml3 = $("label[for='" + selectedRadioId3 + "']").html(); 
+            
+            if (selectedNameValue3 === correctAnswer3) {
+                $("#results3").html('<img id="img3" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results3").html('<img id="img3" src="img/wrong.png" />');
+                //$("#results3").html(selectedLabelHtml3 + " is NOT correct").css("color", "red");
+            }
+            
+            var selectedRadio4 = $("input[name='question4']:checked");
+            var selectedNameValue4 = selectedRadio4.val();
+            var selectedRadioId4 = selectedRadio4.attr("id");
+            var selectedLabelHtml4 = $("label[for='" + selectedRadioId4 + "']").html();
+            
+            if (selectedNameValue4 === correctAnswer4) {
+                $("#results4").html('<img id="img4" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results4").html('<img id="img4" src="img/wrong.png" />');
+                //$("#results4").html(selectedLabelHtml4 + " is NOT correct").css("color", "red");
+            }
+            
+            var selectedRadio5 = $("input[name='question5']:checked");
+            var selectedNameValue5 = selectedRadio5.val();
+            var selectedRadioId5 = selectedRadio5.attr("id");
+            var selectedLabelHtml5 = $("label[for='" + selectedRadioId5 + "']").html(); 
+            
+            if (selectedNameValue5 === correctAnswer5) {
+                $("#results5").html('<img id="img5" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results5").html('<img id="img5" src="img/wrong.png" />');
+                //$("#results5").html(selectedLabelHtml5 + " is NOT correct").css("color", "red");
+            }
+            
+            var selectedRadio6 = $("input[name='question6']:checked");
+            var selectedNameValue6 = selectedRadio6.val();
+            var selectedRadioId6 = selectedRadio6.attr("id");
+            var selectedLabelHtml6 = $("label[for='" + selectedRadioId6 + "']").html(); 
+            
+            if (selectedNameValue6 === correctAnswer6) {
+                $('#results6').html('<img id="img6" src="img/checkMark.png" />');
+                correct++;
+            } else {
+                $("#results6").html('<img id="img6" src="img/wrong.png" />');
+                //$("#results6").html(selectedLabelHtml6 + " is NOT correct").css("color", "red");
+            }
+            var total = ((correct/6)*100);
+            $("h3").html('You got ' + total + '%');
+            if(total >90)
+            {
+                $("h3").html('You got ' + total + '%'+ ' Congradulations! You are a Pokemon Master :D');
+            }
+            else
+            {
+                $("h3").html('You got ' + total + '%');
+            }
+            correct = 0; //like this lol
+            total = 0;
+            
+            console.log("selected name value for question 1", selectedNameValue1);
+            console.log("selected name value for question 2", selectedNameValue2);
+            console.log("selected name value for question 3", selectedNameValue3);
+            console.log("selected name value for question 4", selectedNameValue4);
+            console.log("selected name value for question 5", selectedNameValue5);
+            console.log("selected name value for question 6", selectedNameValue6);
+        });
+        
+        
+    </script>
+</body>
+
+</html>
