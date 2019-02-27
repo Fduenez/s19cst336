@@ -1,0 +1,130 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>AJAX: Sign Up Page</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="dummybodyid">
+  <h1> Sign Up Form </h1>
+
+  <form>
+    <fieldset>
+      <legend>Sign Up</legend>
+      <div><label>First Name:</label><input type="text"></div>
+      <div><label>Last Name:</label><input type="text"></div>
+      <div><label>Email:</label><input type="text"></div>
+      <div><label>Phone Number:</label><input type="text"></div>
+      <div><label>Zip Code:</label><input type="text" id = "zip"><span class = "failed"></span></div>
+      <div><label id="city">City:</label></div>
+      <div><label id="latitude">Latitude:</label></div>
+      <div><label id="longitude">Longitude:</label></div>
+      <div><label>State:</label><input type="text" id = "state"><span class = "stateFailed"></span></div>
+      <div><label>Select a County:</label><select id="county"></select></div>
+      <div><label>Desired Username:</label><input type="text" id="username"><span id="valid"></span></div>
+      <div><label>Password:</label><input type="password" id="password1"></div>
+      <div><label>Type Password Again:</label><input type="password" id="password2"><span id="retype"></span></div>
+      <div><input type="submit" id="submit" value="Sign up!"></div>
+    </fieldset>
+  </form>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+  
+    var user = ["usernames"];
+    
+      $("#zip").change("input",function(){
+          $.ajax({
+              type: "get",
+          url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+          dataType: "json",
+          data: {
+              "zip": $("#zip").val(),
+            
+          },
+          success: function(data,status) {
+           console.log(data);
+          if(data == false)
+          {
+              $(".failed").html("Zip code not found");
+          }
+          else
+          {
+              $("#city").html("City: " + data["city"]);
+              $("#longitude").html("Longitude: " + data["longitude"]);
+              $("#latitude").html("Latitude: " + data["latitude"]);
+              
+          }
+          },
+          complete: function(data,status) { //optional, used for debugging purposes
+            //console.log(status);
+          }
+          })
+      })
+      $("#state").change("input",function(){
+          $.ajax({
+                  type: "get",
+              url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php?",
+              dataType: "json",
+              data: {
+                  "state": $("#state").val(),
+                
+              },
+              success: function(data,status) {
+               console.log(data);
+              if(data == false)
+              {
+                  $(".stateFailed").html("Invalid Input");
+              }
+              else
+              {
+                  var selector = $("#county");
+                  selector.empty();
+                  var count = 0;
+                  $.each(data, function(){
+                    selector.append($("<option></option>").attr("value",count).text(data[count].county));
+                    count++;
+                    });
+
+                  
+                  
+              }
+              },
+              complete: function(data,status) { //optional, used for debugging purposes
+                //console.log(status);
+              }
+              })
+        })
+        
+        $("#submit").on("click",function(e){
+            var check = true;
+            e.preventDefault();
+            $("#retype").html("");
+            if($("#password1").val() === $("#password2").val())
+            {
+                for(var i = 0; i < user.length; i++)
+                {
+                    if(user[i] === $("#username").val())
+                    {
+                        check = false;
+                        $("#valid").html("Not valid").css("color", "#FF0000");
+                        break;
+                    }
+                }
+                if(check)
+                {
+                    $("#valid").html("valid").css("color","#00FF00");
+                    user.push($("#username").val());
+                }
+                
+            }
+            else
+            {
+                $("#retype").html("retype password");
+            }
+        })
+        
+        
+  </script>
+</body>
+
+</html>

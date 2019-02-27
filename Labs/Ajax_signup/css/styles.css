@@ -1,0 +1,19 @@
+h2
+{
+    font-family: 'Pacifico', cursive; 
+    font-size:3em; 
+    margin-bottom: 0px
+}
+body
+{
+    background-color:#6ba3ff ;
+    text-shadow: 0.5px 0.5px #696969;
+    text-align:center;
+}
+
+input[type=text], input[type=password]
+{
+    border-color:#696969;
+    border-width:1px;
+    border-radius:10px;
+}
