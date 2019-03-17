@@ -21,166 +21,56 @@
       <div><label id="longitude">Longitude:</label></div>
       <div><label>State:</label><input type="text" id = "state"><span class = "stateFailed"></span></div>
       <div><label>Select a County:</label><select id="county"></select></div>
-      <div><label>Desired Username:</label><input type="text" id="username"><span id="valid"></span></div>
+      <div><label>Desired Username:</label><input type="text" id="username"><p>hi</p></div>
       <div><label>Password:</label><input type="password" id="password1"></div>
       <div><label>Type Password Again:</label><input type="password" id="password2"><span id="retype"></span></div>
-      <div><input type="submit" id="submit" value="Sign up!"></div>
+      <div><button type = button id = "button">submit</button></div>
     </fieldset>
   </form>
-  <?php
-  session_start();
 
-    $httpMethod = strtoupper($_SERVER['REQUEST_METHOD']);
-
-    switch($httpMethod) {
-      case "OPTIONS":
-        // Allows anyone to hit your API, not just this c9 domain
-        header("Access-Control-Allow-Headers: X-ACCESS_TOKEN, Access-Control-Allow-Origin, Authorization, Origin, X-Requested-With, Content-Type, Content-Range, Content-Disposition, Content-Description");
-        header("Access-Control-Allow-Methods: POST, GET");
-        header("Access-Control-Max-Age: 3600");
-        exit();
-      case "GET":
-        // Allow any client to access
-        header("Access-Control-Allow-Origin: *");
-        // Let the client know the format of the data being returned
-        header("Content-Type: application/json");
-
-        // TODO: do stuff to get the $results which is an associative array
-        $results = array();
-
-        // Sending back down as JSON
-        echo json_encode($results);
-
-        break;
-      case 'POST':
-        // Get the body json that was sent
-        $rawJsonString = file_get_contents("php://input");
-
-        //var_dump($rawJsonString);
-
-        // Make it a associative array (true, second param)
-        $jsonData = json_decode($rawJsonString, true);
-
-        // TODO: do stuff to get the $results which is an associative array
-        $results = array();
-
-        // Allow any client to access
-        header("Access-Control-Allow-Origin: *");
-        // Let the client know the format of the data being returned
-        header("Content-Type: application/json");
-
-        // Sending back down as JSON
-        echo json_encode($results);
-
-        break;
-      case 'PUT':
-        // TODO: Access-Control-Allow-Origin
-        http_response_code(401);
-        echo "Not Supported";
-        break;
-      case 'DELETE':
-        // TODO: Access-Control-Allow-Origin
-        http_response_code(401);
-        break;
-    }
-?>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
-  
-    var user = ["usernames"];
-    
-      $("#zip").change("input",function(){
-          $.ajax({
-              type: "get",
-          url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
-          dataType: "json",
-          data: {
-              "zip": $("#zip").val(),
-            
-          },
-          success: function(data,status) {
-           console.log(data);
-          if(data == false)
+    $("#button").on("click",function(){
+      $.ajax({
+        type: "POST",
+        url: "api.php",
+        dataType: "text",
+        data: {
+          "username":$("#username").val(),
+          "password": [$("#password1").val(), $("#password2").val()],
+          
+        },
+        success: function(data) {
+          console.log(data);
+          console.log("hi");
+          console.log(data['message']);
+          if(data["message"] === "used") 
           {
-              $(".failed").html("Zip code not found");
+            console.log("hey");
+            $("p").html("Username is used")
           }
-          else
-          {
-              $("#city").html("City: " + data["city"]);
-              $("#longitude").html("Longitude: " + data["longitude"]);
-              $("#latitude").html("Latitude: " + data["latitude"]);
-              
-          }
-          },
-          complete: function(data,status) { //optional, used for debugging purposes
-            //console.log(status);
-          }
-          })
+          // if (data["message"] === "Username is used") 
+          // {
+          //   $("#valid").html("Username is used")
+          // }
+          // if (data["message"] === "Username is used") 
+          // {
+          // ("#valid").html("Username is used");
+          // }
+        },
+        error: function(err) {
+          console.log("Houston, we have a problem!")
+          console.log(arguments);
+        },
+        complete: function(data, status) {
+          
+        
+        }
       })
-      $("#state").change("input",function(){
-          $.ajax({
-                  type: "get",
-              url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php?",
-              dataType: "json",
-              data: {
-                  "state": $("#state").val(),
-                
-              },
-              success: function(data,status) {
-               console.log(data);
-              if(data == false)
-              {
-                  $(".stateFailed").html("Invalid Input");
-              }
-              else
-              {
-                  var selector = $("#county");
-                  selector.empty();
-                  var count = 0;
-                  $.each(data, function(){
-                    selector.append($("<option></option>").attr("value",count).text(data[count].county));
-                    count++;
-                    });
-
-                  
-                  
-              }
-              },
-              complete: function(data,status) { //optional, used for debugging purposes
-                //console.log(status);
-              }
-              })
-        })
-        
-        $("#submit").on("click",function(e){
-            var check = true;
-            e.preventDefault();
-            $("#retype").html("");
-            if($("#password1").val() === $("#password2").val())
-            {
-                for(var i = 0; i < user.length; i++)
-                {
-                    if(user[i] === $("#username").val())
-                    {
-                        check = false;
-                        $("#valid").html("Not valid").css("color", "#FF0000");
-                        break;
-                    }
-                }
-                if(check)
-                {
-                    $("#valid").html("valid").css("color","#00FF00");
-                    user.push($("#username").val());
-                }
-                
-            }
-            else
-            {
-                $("#retype").html("retype password");
-            }
-        })
-        
-        
+      
+      
+      
+    });
   </script>
 </body>
 
