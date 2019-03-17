@@ -66,7 +66,7 @@
       $messages["error"]="username required";
     }
     // checks if password slots are empty
-    else if($password[1] === ""  || $password[0] === "")
+    else if($password[1] === ""  && $password[0] === "")
     {
       $isValid = false;
       $messages["error"]="require to type password and confirm password";
@@ -84,9 +84,8 @@
       $messages["error"]= "password does not match";
     }
     //checks if username is within password
-    if(strpos($password[0], $username) === false)
+    else if(strpos($password[0], $username) === false)
     {
-       $isValid = false;
       $messages["error"] = "works";
     }
     else

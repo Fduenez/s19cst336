@@ -40,7 +40,7 @@
         var randL = (Math.floor((Math.random() * results.length)));
         pass +=(results.charAt(randL));
       }
-      $('#suggested').html("suggested password: " + pass);
+      $('#suggested').html("       suggested password: " + pass);
     });
     
     //this will call ajax and store the usernames and password if they are corect
@@ -56,15 +56,38 @@
         },
         success: function(data) {
           console.log(data);
-          console.log(data['message']);
+          
+          if (data["error"] === "username required") 
+          {
+            $("#valid").html("username required")
+          }
           if(data["message"] === "used") 
           {
             $("#valid").html("Username is used")
           }
+          if(data["error"] === "require to type password and confirm password") 
+          {
+            $("#error1").html("require to type password and confirm password")
+          }
+          else if(data["error"] === "password required") 
+          {
+            $("#error1").html("password required")
+          }
+          
           if (data["error"] === "username is inside password") 
           {
             $("#error1").html("Username is inside password. please try again")
           }
+          if(data["message"] === "Success")
+          {
+            $("#valid").html("")
+            $("#error1").html("")
+            $("#username").val("")
+            $("#password1").val("")
+            $("#password2").val("")
+            $('#suggested').html("");
+          }
+ 
         },
         error: function(err) {
           console.log("Houston, we have a problem!")
