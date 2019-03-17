@@ -59,34 +59,44 @@
     
     $isValid = true;
     
-    
+    //checks if username is inserted"
     if($username === "")
     {
+       $isValid = false;
       $messages["error"]="username required";
     }
-    if($password[1] === ""  || $password[0] === "")
+    // checks if password slots are empty
+    else if($password[1] === ""  || $password[0] === "")
     {
+      $isValid = false;
       $messages["error"]="require to type password and confirm password";
     }
-    if($password[0]==="" )
+    //requires password to be filled
+    else if($password[0]==="" )
     {
+       $isValid = false;
       $messages["error"]= "password required";
     }
-    if($password[1] != $password[0])
+    //checks if password and confirmed password match
+    else if($password[1] != $password[0])
     {
+       $isValid = false;
       $messages["error"]= "password does not match";
     }
-    if($password[1] === $password[0])
+    //checks if username is within password
+    if(strpos($password[0], $username) === false)
     {
-      $messages["error"]= "works";
+       $isValid = false;
+      $messages["error"] = "works";
     }
-    if(stripos($username, $password[0]) != false)
+    else
     {
+       $isValid = false;
       $messages["error"] = "username is inside password";
     }
 
     
-    // $password 
+    // checks if username has been used
     foreach($_SESSION as $name => $pass){
       if($username === $name)
       {

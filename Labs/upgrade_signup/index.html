@@ -21,8 +21,8 @@
       <div><label id="longitude">Longitude:</label></div>
       <div><label>State:</label><input type="text" id = "state"><span class = "stateFailed"></span></div>
       <div><label>Select a County:</label><select id="county"></select></div>
-      <div><label>Desired Username:</label><input type="text" id="username"><p>hi</p></div>
-      <div><label>Password:</label><input type="password" id="password1"></div>
+      <div><label>Desired Username:</label><input type="text" id="username"><span id="valid"></span></div>
+      <div><label>Password:</label><input type="password" id="password1"><span id ="error1"></span> <span id ="suggested"></span></div>
       <div><label>Type Password Again:</label><input type="password" id="password2"><span id="retype"></span></div>
       <div><button type = button id = "button">submit</button></div>
     </fieldset>
@@ -30,11 +30,25 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
+  
+  // this randomly generates a password when the user click on the password box
+    $("#password1").focusin(function(){
+      var results = "abcdefghijklmopqrstuvwxyz0123456789";
+      var pass = "";
+      for(var i = 0; i < 8; i++)
+      {
+        var randL = (Math.floor((Math.random() * results.length)));
+        pass +=(results.charAt(randL));
+      }
+      $('#suggested').html("suggested password: " + pass);
+    });
+    
+    //this will call ajax and store the usernames and password if they are corect
     $("#button").on("click",function(){
       $.ajax({
         type: "POST",
         url: "api.php",
-        dataType: "text",
+        dataType: "json",
         data: {
           "username":$("#username").val(),
           "password": [$("#password1").val(), $("#password2").val()],
@@ -42,21 +56,15 @@
         },
         success: function(data) {
           console.log(data);
-          console.log("hi");
           console.log(data['message']);
           if(data["message"] === "used") 
           {
-            console.log("hey");
-            $("p").html("Username is used")
+            $("#valid").html("Username is used")
           }
-          // if (data["message"] === "Username is used") 
-          // {
-          //   $("#valid").html("Username is used")
-          // }
-          // if (data["message"] === "Username is used") 
-          // {
-          // ("#valid").html("Username is used");
-          // }
+          if (data["error"] === "username is inside password") 
+          {
+            $("#error1").html("Username is inside password. please try again")
+          }
         },
         error: function(err) {
           console.log("Houston, we have a problem!")
