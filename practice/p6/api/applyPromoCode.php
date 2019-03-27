@@ -11,3 +11,4 @@ $discount ["beach"] = 0.20;
 $discount ["sunny"] = 0.20;
 
 echo json_encode($discount[rand(0,5)]);
+?>

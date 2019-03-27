@@ -1,0 +1,15 @@
+.blueStripe{
+    background-color: #041a3d;
+    color: white;
+}
+.coolPeeps{
+    display: flex;
+    height:auto;
+    width:40%;
+}
+.col{
+    margin: 15px;
+}
+body header{
+    margin-left: 20px;
+}

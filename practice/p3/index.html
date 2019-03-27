@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slot Machine</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <style>
+            #play{
+                width: 70px;
+                height: 50px;
+                border-style: outset;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body align="center">
+        <h1>Slot Machine</h1>
+        <button id="play">Play!</button>
+        <div style="display:flex">
+            <div id="image1"></div>
+            <div id="image2"></div>
+            <div id="image3"></div>
+        </div>
+        <div>
+            <p id="text"></p>
+        </div>
+        
+        
+        
+        <script>
+        /*global $*/
+            var playButton = document.querySelector('#play');
+            let imageArray = ["cherry", "grapes", "seven"];//let is like a var
+            let randomIndex = Math.floor(Math.random() * 3);
+            //let randomImage = imageArray[randomIndex];
+            let randomImage1 = imageArray[randomIndex];
+            let randomImage2 = imageArray[randomIndex];
+            let randomImage3 = imageArray[randomIndex];
+            playButton.style.backgroundColor = "greenyellow";
+            
+            let winnings = 0;
+            $("#image1").html("<img src='img/" + randomImage1 + ".png' />");
+            
+            randomIndex = Math.floor(Math.random() * 3);
+            randomImage = imageArray[randomIndex];
+            $("#image2").html("<img src='img/" + randomImage2 + ".png' />");
+            
+            randomIndex = Math.floor(Math.random() * 3);
+            randomImage = imageArray[randomIndex];
+            $("#image3").html("<img src='img/" + randomImage3 + ".png' />");
+            
+            playButton.addEventListener('click', reRoll);
+            
+            function reRoll(){
+                randomIndex = Math.floor(Math.random() * 3);
+                randomImage1 = imageArray[randomIndex];
+                $("#image1").html("<img src='img/" + randomImage1 + ".png' />");
+                
+                randomIndex = Math.floor(Math.random() * 3);
+                randomImage2 = imageArray[randomIndex];
+                $("#image2").html("<img src='img/" + randomImage2 + ".png' />");
+                
+                randomIndex = Math.floor(Math.random() * 3);
+                randomImage3 = imageArray[randomIndex];
+                $("#image3").html("<img src='img/" + randomImage3 + ".png' />");
+                
+                if(randomImage1 === "cherry" && randomImage2 === "cherry" && randomImage3 === "cherry"){
+                    $("#text").html('You Won $100!');
+                    winnings+=100;
+                }
+                else if(randomImage1 === "grapes" && randomImage2 === "grapes" && randomImage3 === "grapes"){
+                    $("#text").html('You Won $300!');
+                    winnings+=300;
+                }
+                else if(randomImage1 === "seven" && randomImage2 === "seven" && randomImage3 === "seven"){
+                    $("#text").html('JACKPOT!');
+                    winnings+=500;
+                }
+                else{
+                     $("#text").html('Try Again.');
+                }
+            }
+
+        </script>
+    </body>
+</html>
+
+
+<!--https://s2019cst336-blancamarquez.c9users.io/s2019cst336/Practices/P3/index.html-->

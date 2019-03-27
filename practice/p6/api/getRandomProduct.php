@@ -7,3 +7,4 @@ $product["Sunscreen 80SPF"] = 25;
 $product["Plastic Flying Disc"] = 15;
 $product["Beach Umbrella"] = 75;
 
+?>

@@ -1,0 +1,122 @@
+[27-Mar-2019 01:20:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:21:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:21:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:25:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:27:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:30:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:34:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:35:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:36:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:38:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:38:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:38:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:38:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:38:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:38:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:40:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:41:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:41:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:41:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:42:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:43:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 01:43:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': productName' at line 1' in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getSearchResults.php on line 14
+[27-Mar-2019 04:10:01 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php on line 13
+[27-Mar-2019 04:10:01 UTC] PHP Stack trace:
+[27-Mar-2019 04:10:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php:0
+[27-Mar-2019 04:10:01 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php:13
+[27-Mar-2019 04:17:35 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php on line 13
+[27-Mar-2019 04:17:35 UTC] PHP Stack trace:
+[27-Mar-2019 04:17:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php:0
+[27-Mar-2019 04:17:35 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php:13
+[27-Mar-2019 04:18:52 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php on line 13
+[27-Mar-2019 04:18:52 UTC] PHP Stack trace:
+[27-Mar-2019 04:18:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php:0
+[27-Mar-2019 04:18:52 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/s19cst336/Labs/ottermart/api/getPurchaseHistory.php:13
