@@ -13,7 +13,7 @@ function getDataBaseConnection($dbname = "ottermart")
         $password = $url["pass"];
     } 
 
-    $dbConn = new PDO("mysql:hosr=$host;dbname=$dbname", $username, $password);
+    $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     
     //display errors when accessing tables
     
