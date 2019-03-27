@@ -8,6 +8,15 @@ if(!empty($_GET['product']))
 {
     $sql .= " AND productName LIKE :productName";
     $namedParameters[":productName"] = "%" . $_GET['product']. "%";
+    // $sql .= " OR productDescription LIKE :productDescription";
+    // $namedParameters[":productDescription"] = "%" . $_GET['product']. "%";
+}
+if(!empty($_GET['product']))
+{
+    // $sql .= " AND productName LIKE :productName";
+    // $namedParameters[":productName"] = "%" . $_GET['product']. "%";
+    $sql .= " OR productDescription LIKE :productDescription";
+    $namedParameters[":productDescription"] = "%" . $_GET['product']. "%";
 }
 //checks wether the user has selected a category of a product
 if(!empty($_GET['category']))
