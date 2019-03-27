@@ -5,6 +5,14 @@ function getDataBaseConnection($dbname = "ottermart")
     $username = "root";
     $password = "";
     
+    if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+        $host = $url["host"];
+        $dbname = substr($url["path"], 1);
+        $username = $url["user"];
+        $password = $url["pass"];
+    } 
+
     $dbConn = new PDO("mysql:hosr=$host;dbname=$dbname", $username, $password);
     
     //display errors when accessing tables
