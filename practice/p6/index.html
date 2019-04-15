@@ -1,149 +1,81 @@
+<!DOCTYPE html>
 <html>
-<head align="center">
-    <title>Shopping Cart</title>
-     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-     <style>
-        table 
-        {
-          border-collapse: collapse;
-          text-align: center;
-          margin: 0 auto;
-        }
-
-         table, tr, th, td
-         {
-             border: 1px solid black;
-         }
-     </style>
-</head>
-
-<body align="center">
-    <h1> Spring Break Shopping  </h1>
+    <head>
+        <title> </title>
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    </head>
+    <body>
+        <h1> Discount Shopping! </h1>
     
-    <table>
+        <table>
+        <tr id="table-head">
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th> Quantity </th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td id="product-name">
+                <div id="productInfo">
+                    
+                </div>
+            </td>
+            <td id="product-price"></td>
+            <td><input id="product-quantity" type="text" size="5"></td>
+            <td id="product-total"></td>
+        </tr>
         
-    <tr>
-        <td>Product</td>
-        <td>UnitPrice</td>
-        <td>Quantity</td>
-        <td>Total</td>
-    </tr>
-    <tr>
-        <td>Flip-flop Sandals</td>
-        <td>30</td>
-        <td><input type="text" id="quant1" size="5"></td>
-        <td id="flip"></td>
-    </tr>
+        <tr> 
+            <td class="products">
+                <select name="products">
+                    <option value=""> Select One </option>
+                </select>
+            </td>
+            <td></td>
+            <td><input id="product-quantity" type="text" size="5"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Discount</td>
+            <td></td>
+            <td id="discount" ></td>
+            <td ></td>
+        </tr>    
+            
+        <tr>
+            <td>Subtotal</td>
+            <td></td>
+            <td></td>
+            <td id="subtotal"></td>
+        </tr>             
+            
+        <tr>
+            <td>Tax (10%)</td>
+            <td></td>
+            <td></td>
+            <td id="tax"></td>
+        </tr>
+        
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td id="total"></td>
+        </tr>
+           
+        </table>
+        
+        <promo>
+            <label>Promo Code: </label>
+            <input id="promocode" type="text"/>
+        </promo>
 
-   <tr>
-        <td>Discount</td>
-        <td></td>
-        <td></td>
-        <td id="shipping"></td>
-    </tr>    
-        
-    <tr>
-        <td>Subtotal</td>
-        <td></td>
-        <td></td>
-        <td id="subtotal"></td>
-    </tr>             
-        
-    <tr>
-        <td>Tax (10%)</td>
-        <td></td>
-        <td></td>
-        <td id="tax"></td>
-    </tr>
-    
-    <tr>
-        <td>Total</td>
-        <td></td>
-        <td></td>
-        <td id="total"></td>
-    </tr>
-       
-    </table>
-    
-    <br></br>
-        
-    <span>Promo Code: <input type="text" id="promo" size="10"></span>
+    </body>
+  
+  <script type="text/javascript" src="js/functions.js"></script>
 
-    <script>
-    
-    /* global $*/
-        var microAmount = 0;
-        var sunscreen = 0;
-        var flip = 0;
-        var selectedShipping = 0;
-        var subTotal = 0;
-        var tax = 0; 
-        var total = 0;
-        
-        $("#state").change("input",function(){
-          $.ajax({
-                  type: "get",
-              url: "applyPromoCode.php",
-              dataType: "json",
-              data: {
-                  "state": $("#state").val(),
-                
-              },
-              success: function(data,status) {
-               console.log(data);
-              if(data == false)
-              {
-                  $(".stateFailed").html("Invalid Input");
-              }
-              else
-              {
-                  var selector = $("#county");
-                  selector.empty();
-                  var count = 0;
-                  $.each(data, function(){
-                    selector.append($("<option></option>").attr("value",count).text(data[count].county));
-                    count++;
-                    });
-
-                  
-                  
-              }
-              },
-              complete: function(data,status) { //optional, used for debugging purposes
-                //console.log(status);
-              }
-              })
-        })
-        
-        
-        $("#quant1").change(function(){
-            flip = parseFloat($("#quant1").val()) * 30;
-            $("#flip").html(microAmount);
-            subTotal = flip;
-            $("#subtotal").html(subTotal);
-            tax = parseInt(subTotal * 0.10);
-            $("#tax").html(tax);
-            total = subTotal + tax;
-            $("#total").html(total);
-        })
-        
-        $("#ship").change(function(){
-            selectedShipping = parseFloat($("#ship").val());
-            $("#shipping").html(selectedShipping);
-            subTotal = microAmount + sunscreen + flip + selectedShipping;
-            $("#subtotal").html(subTotal);
-            tax = parseInt(subTotal * 0.10);
-            $("#tax").html(tax);
-            total = subTotal + tax;
-            $("#total").html(total);
-        })
-        $("button.submit").on("click", function() {
-            $("#confirmed").html("THANK YOU FOR YOUR PURCHASE");
-        })
-        
-        
-        
-        
-    </script>
-</body>
 </html>

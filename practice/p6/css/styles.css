@@ -1,0 +1,35 @@
+html {
+    overflow-x: hidden;
+}
+h1 {
+    text-align: center;
+    background: #eee;
+    margin: -.5rem -1rem 1rem -1rem;
+    padding-top: .5rem;
+    padding-bottom: 3rem;
+}
+table {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+#table-head {
+    border: 1px solid black;
+}
+th {
+    padding: 0 auto;
+    text-align: center;
+}
+td {
+    border: 1px solid black;
+    padding: .2rem .5rem;
+}
+
+promo {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding-top: 2rem;
+}

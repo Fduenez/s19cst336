@@ -1,0 +1,17 @@
+[11-Mar-2019 20:05:21 UTC] PHP Warning:  Cannot use a scalar value as an array in /home/ubuntu/workspace/s19cst336/Practice/p6/api/applyPromoCode.php on line 33
+[11-Mar-2019 20:05:21 UTC] PHP Stack trace:
+[11-Mar-2019 20:05:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 20:07:27 UTC] PHP Parse error:  syntax error, unexpected '$discount' (T_VARIABLE) in /home/ubuntu/workspace/s19cst336/Practice/p6/api/applyPromoCode.php on line 21
+[11-Mar-2019 20:07:40 UTC] PHP Parse error:  syntax error, unexpected '$discount' (T_VARIABLE) in /home/ubuntu/workspace/s19cst336/Practice/p6/api/applyPromoCode.php on line 21
+[25-Mar-2019 20:11:48 UTC] PHP Fatal error:  Call to undefined method PDO::setAttributes() in /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php on line 10
+[25-Mar-2019 20:11:48 UTC] PHP Stack trace:
+[25-Mar-2019 20:11:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php:0
+[25-Mar-2019 20:12:08 UTC] PHP Fatal error:  Call to undefined method PDO::setAttributes() in /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php on line 10
+[25-Mar-2019 20:12:08 UTC] PHP Stack trace:
+[25-Mar-2019 20:12:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php:0
+[25-Mar-2019 20:12:16 UTC] PHP Fatal error:  Call to undefined method PDO::setAttributes() in /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php on line 10
+[25-Mar-2019 20:12:16 UTC] PHP Stack trace:
+[25-Mar-2019 20:12:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php:0
+[25-Mar-2019 20:12:25 UTC] PHP Fatal error:  Call to undefined method PDO::setAttributes() in /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php on line 10
+[25-Mar-2019 20:12:25 UTC] PHP Stack trace:
+[25-Mar-2019 20:12:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Practice/p6/api/getAllProducts.php:0
