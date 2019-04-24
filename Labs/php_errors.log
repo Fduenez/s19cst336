@@ -1,3 +1,9 @@
 [17-Mar-2019 05:50:09 UTC] PHP Parse error:  syntax error, unexpected 'false' (T_STRING) in /home/ubuntu/workspace/s19cst336/Labs/upgrade_signup/api.php on line 83
 [17-Mar-2019 05:50:11 UTC] PHP Parse error:  syntax error, unexpected 'false' (T_STRING) in /home/ubuntu/workspace/s19cst336/Labs/upgrade_signup/api.php on line 83
 [17-Mar-2019 05:50:46 UTC] PHP Parse error:  syntax error, unexpected 'false' (T_STRING) in /home/ubuntu/workspace/s19cst336/Labs/upgrade_signup/api.php on line 83
+[23-Apr-2019 19:27:56 UTC] PHP Fatal error:  Call to undefined function jason_encode() in /home/ubuntu/workspace/s19cst336/Labs/lab8/pixabay.php on line 48
+[23-Apr-2019 19:27:56 UTC] PHP Stack trace:
+[23-Apr-2019 19:27:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Labs/lab8/pixabay.php:0
+[23-Apr-2019 19:56:12 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/s19cst336/Labs/lab8/pixabay.php on line 48
+[23-Apr-2019 19:56:12 UTC] PHP Stack trace:
+[23-Apr-2019 19:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Labs/lab8/pixabay.php:0

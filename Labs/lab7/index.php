@@ -146,3 +146,7 @@
     <!--https://s19cst336-frankduenez.c9users.io/s19cst336/Labs/ottermart/index.php-->
     <!--https://github.com/Fduenez/s19cst336/tree/master/Labs/ottermart-->
 </html>
+
+<!--  https://s19cst336-frankduenez.c9users.io/s19cst336/Labs/lab7/  -->
+<!--  http://fduenez-s19cst336.herokuapp.com/Labs/lab7/  -->
+<!--  https://github.com/Fduenez/s19cst336/tree/master/Labs/lab7  -->
