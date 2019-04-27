@@ -2,6 +2,21 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Favorite</title>
   <!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
+  
+  <style>
+    img{
+      height: 300px;
+    }
+    .heart{
+      display: block;
+      height: 50px;
+      width: 50px;
+      margin: 0 auto;
+    }
+    .col{
+      display: flex;
+    }
+  </style>
 </head>
 
 <body id="dummybodyid">
@@ -10,20 +25,10 @@
   <form>
     <fieldset>
       <legend>Favorite</legend>
-      <div>
-          <label>search images:</label><input type="text" id="query">
-          <button type = button id = "button">submit</button>
-          <div id="box"> 
-          
-          </div>
-          <div id="box2">
-            
-          </div>
-          <div id="box3">
-            
-          </div>
-              
-      </div>
+      
+      <label>search images:</label><input type="text" id="query">
+      <button type = button id = "button">submit</button>
+      <div id="container"> </div>
         
     </fieldset>
   </form>
@@ -33,9 +38,8 @@
   
                 $("#button").on("click", function(e)
                 {
-                  $("#box").html("");
-                  $("#box2").html("");
-                  $("#box3").html("");
+                  $("#container").empty();
+                  
                   $.ajax
                   ({
                     type:"GET",
@@ -48,12 +52,31 @@
                     },
                     success:function(data, status)
                     {
-                      console.log(data);
                         for(var i = 0; i < 9; i += 3)
                         {
-                          $("#box").append('<img src= "' + data[i]['largeImageURL'] + '" width="300" />');
-                          $("#box2").append('<img src="' + data[i +1]['largeImageURL'] + '" width="300"/>');
-                          $("#box3").append('<img src="' + data[i + 2]['largeImageURL'] + '" width="300"/>');
+                          var col = document.createElement("div");
+                          col.setAttribute("class", "col");
+                          
+                          for(var j=0; j < 3; j++){
+
+                            var d = document.createElement("div");
+                            d.setAttribute("background-color", "black");
+                            d.setAttribute("width", "300px");
+      
+                            var img = document.createElement("img");
+                            img.setAttribute("src", data[i+j]['largeImageURL']);
+                            
+                            var heart = document.createElement("img");
+                            heart.setAttribute("src","favorite-on.png");
+                            heart.setAttribute("class","heart");
+                            
+                            d.appendChild(img);
+                            d.appendChild(heart);
+          
+                            col.appendChild(d);
+                          }
+                          
+                          $("#container").append(col);
                         }
                     } ,
                    complete: function(status, err){
@@ -65,3 +88,7 @@
 </body>
 
 </html>
+
+<!-- https://s19cst336-frankduenez.c9users.io/s19cst336/Labs/lab8/favorite.php -->
+<!-- https://github.com/Fduenez/s19cst336/tree/master/Labs/lab8 -->
+<!--http://fduenez-s19cst336.herokuapp.com/Labs/lab8/favorite.php-->
