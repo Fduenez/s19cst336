@@ -1,8 +1,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Favorite</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
-  
+ 
   <style>
     img{
       height: 300px;
@@ -27,14 +30,17 @@
       <legend>Favorite</legend>
       
       <label>search images:</label><input type="text" id="query">
-      <button type = button id = "button">submit</button>
-      <button type = button id = "favorite">all favorites</button>
+      <button type = button id = "button" class="btn btn-primary">submit</button>
+      <button type = button id = "favorite" class="btn btn-primary">all favorites</button>
       <div id="container"> </div>
         
     </fieldset>
   </form>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
   <script>
                 /* global $*/
                 $("#button").on("click", function(e)
@@ -154,34 +160,34 @@
                   
                 },
                 success: function(data) {
+                  
                     console.log(data);
                     
                     
-                    // for(var i=0; i < data.length; i += 3){
-                    //     var col = document.createElement("DIV");
-                    //     col.setAttribute("class", "col");
+                    for(var i=0; i < data.length; i += 3){
+                        var col = document.createElement("DIV");
+                        col.setAttribute("class", "col");
                         
-                    //     for(var j=0; j<3 && i+j < data.length; j++){
+                        for(var j=0; j<3 && i+j < data.length; j++){
                         
-                    //         var imgdiv = document.createElement("DIV");
-                    //         imgdiv.setAttribute("class", "imgdiv");
+                            var imgdiv = document.createElement("div");
+                            imgdiv.setAttribute("class", "imgdiv");
+                            var image = document.createElement("IMG");
+                            image.setAttribute("src", data[i+j]["link"]);
+                            imgdiv.appendChild(image);
                             
-                    //         var image = document.createElement("IMG");
-                    //         image.setAttribute("src", data[i+j]["link"]);
-                    //         imgdiv.appendChild(image);
+                            var heart = document.createElement("IMG"); // < img >
+                            heart.setAttribute("src", "favorite-on.png"); // < img src="img/favorite.png">
+                            heart.setAttribute("class", "heart"); // < img src="img/favorite.png" class="heart">
+                            heart.setAttribute("onclick", "changeHeart(this.id)")
+                            heart.setAttribute("id", data[i+j]["link"]);
+                            imgdiv.appendChild(heart);
                             
-                    //         var heart = document.createElement("IMG"); // < img >
-                    //         heart.setAttribute("src", "img/favorite-on.png"); // < img src="img/favorite.png">
-                    //         heart.setAttribute("class", "heart"); // < img src="img/favorite.png" class="heart">
-                    //         heart.setAttribute("onclick", "heartClicked(this.id)")
-                    //         heart.setAttribute("id", data[i+j]["link"]);
-                    //         imgdiv.appendChild(heart);
-                            
-                    //         col.appendChild(imgdiv);
-                        // }
+                            col.appendChild(imgdiv);
+                        }
                         
-                        // document.getElementById("images").appendChild(col);
-                    // }
+                        document.getElementById("container").appendChild(col);
+                    }
                      
                 },
                 error: function(status,err) {
