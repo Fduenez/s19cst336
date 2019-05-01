@@ -1,0 +1,187 @@
+[01-May-2019 02:37:04 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 18
+[01-May-2019 02:37:04 UTC] PHP Stack trace:
+[01-May-2019 02:37:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:37:04 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:18
+[01-May-2019 02:37:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 20
+[01-May-2019 02:37:04 UTC] PHP Stack trace:
+[01-May-2019 02:37:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:37:51 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 02:37:51 UTC] PHP Stack trace:
+[01-May-2019 02:37:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:37:51 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:21
+[01-May-2019 02:37:51 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 23
+[01-May-2019 02:37:51 UTC] PHP Stack trace:
+[01-May-2019 02:37:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:40:26 UTC] PHP Warning:  addslashes() expects parameter 1 to be string, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 02:40:26 UTC] PHP Stack trace:
+[01-May-2019 02:40:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:40:26 UTC] PHP   2. addslashes() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:21
+[01-May-2019 02:40:26 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 23
+[01-May-2019 02:40:26 UTC] PHP Stack trace:
+[01-May-2019 02:40:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:46:35 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 02:46:35 UTC] PHP Stack trace:
+[01-May-2019 02:46:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:46:35 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:21
+[01-May-2019 02:46:35 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 24
+[01-May-2019 02:46:35 UTC] PHP Stack trace:
+[01-May-2019 02:46:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:47:38 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 02:47:38 UTC] PHP Stack trace:
+[01-May-2019 02:47:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:47:38 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:21
+[01-May-2019 02:47:38 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 24
+[01-May-2019 02:47:38 UTC] PHP Stack trace:
+[01-May-2019 02:47:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:54:34 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 02:54:34 UTC] PHP Stack trace:
+[01-May-2019 02:54:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:54:34 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:21
+[01-May-2019 02:54:34 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 24
+[01-May-2019 02:54:34 UTC] PHP Stack trace:
+[01-May-2019 02:54:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:56:01 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 02:56:01 UTC] PHP Stack trace:
+[01-May-2019 02:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 02:56:01 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:21
+[01-May-2019 02:56:01 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 24
+[01-May-2019 02:56:01 UTC] PHP Stack trace:
+[01-May-2019 02:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:20:50 UTC] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 42
+[01-May-2019 03:27:35 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 42
+[01-May-2019 03:27:35 UTC] PHP Stack trace:
+[01-May-2019 03:27:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:27:35 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:42
+[01-May-2019 03:36:41 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 15
+[01-May-2019 03:36:41 UTC] PHP Stack trace:
+[01-May-2019 03:36:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:36:41 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:15
+[01-May-2019 03:36:41 UTC] PHP Warning:  date_timestamp_get() expects parameter 1 to be DateTimeInterface, null given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 16
+[01-May-2019 03:36:41 UTC] PHP Stack trace:
+[01-May-2019 03:36:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:36:41 UTC] PHP   2. date_timestamp_get() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:16
+[01-May-2019 03:36:41 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 17
+[01-May-2019 03:36:41 UTC] PHP Stack trace:
+[01-May-2019 03:36:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:48:52 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 7
+[01-May-2019 03:48:52 UTC] PHP Stack trace:
+[01-May-2019 03:48:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:48:52 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:7
+[01-May-2019 03:50:46 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 7
+[01-May-2019 03:50:46 UTC] PHP Stack trace:
+[01-May-2019 03:50:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:50:46 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:7
+[01-May-2019 03:58:10 UTC] PHP Warning:  date_timestamp_get() expects parameter 1 to be DateTimeInterface, null given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 13
+[01-May-2019 03:58:10 UTC] PHP Stack trace:
+[01-May-2019 03:58:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:58:10 UTC] PHP   2. date_timestamp_get() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:13
+[01-May-2019 03:58:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 14
+[01-May-2019 03:58:10 UTC] PHP Stack trace:
+[01-May-2019 03:58:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 03:58:58 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 15
+[01-May-2019 03:58:58 UTC] PHP Stack trace:
+[01-May-2019 03:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 04:15:59 UTC] PHP Warning:  date_timestamp_get() expects parameter 1 to be DateTimeInterface, string given in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 15
+[01-May-2019 04:15:59 UTC] PHP Stack trace:
+[01-May-2019 04:15:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 04:15:59 UTC] PHP   2. date_timestamp_get() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:15
+[01-May-2019 04:15:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 17
+[01-May-2019 04:16:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 2019)' at line 1' in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 17
+[01-May-2019 04:32:45 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, object given in /home/ubuntu/workspace/s19cst336/projects/project5/index.php on line 54
+[01-May-2019 04:32:45 UTC] PHP Stack trace:
+[01-May-2019 04:32:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/index.php:0
+[01-May-2019 04:32:45 UTC] PHP   2. mysqli_fetch_array() /home/ubuntu/workspace/s19cst336/projects/project5/index.php:54
+[01-May-2019 07:29:41 UTC] PHP Fatal error:  Call to undefined function NOW() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 14
+[01-May-2019 07:29:41 UTC] PHP Stack trace:
+[01-May-2019 07:29:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 07:31:33 UTC] PHP Parse error:  syntax error, unexpected 'NOW' (T_STRING) in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 14
+[01-May-2019 07:41:13 UTC] PHP Parse error:  syntax error, unexpected 'NOW' (T_STRING) in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 14
+[01-May-2019 18:20:35 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, object given in /home/ubuntu/workspace/s19cst336/projects/project5/index.php on line 69
+[01-May-2019 18:20:35 UTC] PHP Stack trace:
+[01-May-2019 18:20:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/index.php:0
+[01-May-2019 18:20:35 UTC] PHP   2. mysqli_fetch_array() /home/ubuntu/workspace/s19cst336/projects/project5/index.php:69
+[01-May-2019 19:52:26 UTC] PHP Warning:  include(dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 30
+[01-May-2019 19:52:26 UTC] PHP Stack trace:
+[01-May-2019 19:52:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 19:52:26 UTC] PHP Warning:  include(): Failed opening 'dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 30
+[01-May-2019 19:52:26 UTC] PHP Stack trace:
+[01-May-2019 19:52:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:09:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 47
+[01-May-2019 20:09:46 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 62
+[01-May-2019 20:10:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 24
+[01-May-2019 20:10:19 UTC] PHP Stack trace:
+[01-May-2019 20:10:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:10:19 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 42
+[01-May-2019 20:10:19 UTC] PHP Stack trace:
+[01-May-2019 20:10:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:10:19 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:42
+[01-May-2019 20:10:19 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 44
+[01-May-2019 20:10:19 UTC] PHP Stack trace:
+[01-May-2019 20:10:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:11:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 24
+[01-May-2019 20:11:17 UTC] PHP Stack trace:
+[01-May-2019 20:11:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:11:17 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 42
+[01-May-2019 20:11:17 UTC] PHP Stack trace:
+[01-May-2019 20:11:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:11:17 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:42
+[01-May-2019 20:11:17 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 44
+[01-May-2019 20:11:17 UTC] PHP Stack trace:
+[01-May-2019 20:11:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:13:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 60
+[01-May-2019 20:14:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 24
+[01-May-2019 20:14:40 UTC] PHP Stack trace:
+[01-May-2019 20:14:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:15:26 UTC] PHP Fatal error:  Call to undefined function reArrayFiles() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 2
+[01-May-2019 20:15:26 UTC] PHP Stack trace:
+[01-May-2019 20:15:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:16:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 4
+[01-May-2019 20:16:29 UTC] PHP Stack trace:
+[01-May-2019 20:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:19:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 4
+[01-May-2019 20:19:40 UTC] PHP Stack trace:
+[01-May-2019 20:19:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:25:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 4
+[01-May-2019 20:25:03 UTC] PHP Stack trace:
+[01-May-2019 20:25:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:26:39 UTC] PHP Warning:  include(dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 16
+[01-May-2019 20:26:39 UTC] PHP Stack trace:
+[01-May-2019 20:26:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:26:39 UTC] PHP Warning:  include(): Failed opening 'dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 16
+[01-May-2019 20:26:39 UTC] PHP Stack trace:
+[01-May-2019 20:26:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:26:39 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 20:26:39 UTC] PHP Stack trace:
+[01-May-2019 20:26:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:27:01 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 18
+[01-May-2019 20:27:01 UTC] PHP Stack trace:
+[01-May-2019 20:27:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:27:01 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:18
+[01-May-2019 20:27:01 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 20:27:01 UTC] PHP Stack trace:
+[01-May-2019 20:27:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:27:11 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 20:27:11 UTC] PHP Stack trace:
+[01-May-2019 20:27:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:27:50 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 21
+[01-May-2019 20:27:50 UTC] PHP Stack trace:
+[01-May-2019 20:27:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:29:03 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 22
+[01-May-2019 20:29:03 UTC] PHP Stack trace:
+[01-May-2019 20:29:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[01-May-2019 20:29:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'event_picture_dump.up_files' doesn't exist' in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php(23): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php on line 23
+[01-May-2019 20:29:54 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/s19cst336/projects/project5/dbConnection.php:4) in /home/ubuntu/workspace/s19cst336/projects/project5/dbConnection.php on line 4
+[01-May-2019 20:29:54 UTC] PHP Stack trace:
+[01-May-2019 20:29:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
