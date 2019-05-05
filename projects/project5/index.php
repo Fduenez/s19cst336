@@ -58,9 +58,13 @@
                         echo "<div id='box'>";
                         while($result=mysqli_fetch_array($sth))
                         {
-                            echo "<div>";
-                            echo '<img style="height:300px;width:auto "src="data:image/jpeg;base64,'.base64_encode( $result['media'] ).'"/>';
-                            echo "</div>";
+                            // echo "<div>";
+                            
+                            // echo '<img style="height:300px;width:auto "src="data:image/jpeg;base64,'.base64_encode( $result['media'] ).'"/>';
+                            // echo "</div>";
+                            echo '<div>';
+                            echo '<img onclick="enlarge(this)" src="data:image/jpeg;base64,'. base64_encode( $result['media'] ).'"/>';
+                            echo ' </div> ';
                         }
                         echo "</div>";
 
@@ -75,6 +79,12 @@
 
         <script type="text/javascript">
         /* global $ */
+        function enlarge(img)
+        {
+            $(img).css("width", "300px");
+            $(img).css("height", "auto");
+        }
+        
             // 1. Get rid of file input button
             //$("form button:nth-of-type(1)").click(function() {
             $("#selectButton").click(function() {

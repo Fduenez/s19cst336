@@ -185,3 +185,88 @@ Stack trace:
 [01-May-2019 20:29:54 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/s19cst336/projects/project5/dbConnection.php:4) in /home/ubuntu/workspace/s19cst336/projects/project5/dbConnection.php on line 4
 [01-May-2019 20:29:54 UTC] PHP Stack trace:
 [01-May-2019 20:29:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5/uploadFiles.php:0
+[05-May-2019 06:16:41 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/s19cst336/projects/project5/index.php on line 66
+[05-May-2019 06:17:50 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/s19cst336/projects/project5/index.php on line 68
+[05-May-2019 06:18:36 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/s19cst336/projects/project5/index.php on line 68
+[05-May-2019 06:20:00 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/s19cst336/projects/project5/index.php on line 68
+[05-May-2019 06:40:38 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:41:25 UTC] PHP Warning:  include(dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 10
+[05-May-2019 06:41:25 UTC] PHP Stack trace:
+[05-May-2019 06:41:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 06:41:25 UTC] PHP Warning:  include(): Failed opening 'dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 10
+[05-May-2019 06:41:25 UTC] PHP Stack trace:
+[05-May-2019 06:41:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 06:41:25 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 15
+[05-May-2019 06:41:25 UTC] PHP Stack trace:
+[05-May-2019 06:41:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 06:42:09 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/s19cst336/projects/project5.1/dbConnection.php on line 23
+[05-May-2019 06:42:09 UTC] PHP Stack trace:
+[05-May-2019 06:42:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 06:42:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:44:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:45:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:47:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:49:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:52:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:54:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:56:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 06:59:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''upload' (`email_address`, `caption`, `media`, `timestamp` )   VALUES ('frankdue' at line 1' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 07:01:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''upload' (`email_address`, `caption`, `media`, `timestamp` )   VALUES ('\'fduene' at line 1' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 07:03:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 19
+[05-May-2019 07:05:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 18
+[05-May-2019 07:12:48 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 28
+[05-May-2019 07:12:48 UTC] PHP Stack trace:
+[05-May-2019 07:12:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 07:12:48 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:28
+[05-May-2019 07:13:09 UTC] PHP Warning:  file_get_contents() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 28
+[05-May-2019 07:13:09 UTC] PHP Stack trace:
+[05-May-2019 07:13:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 07:13:09 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:28
