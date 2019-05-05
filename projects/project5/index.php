@@ -8,12 +8,13 @@
 
     <!-- Optional bootstrap theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <div class="container">
         <div class="col-md-3">
-            <form>
+            <form method="POST" enctype="multipart/form-data">
                 <div>
                     <label>email:</label> <input type="text" name="email"/>
                 </div>
@@ -46,28 +47,22 @@
             <div id="outer_wrapper">
                 <div id="inner_wrapper">
                      <?php
-                        //  include 'dbConnection.php';
                         
-                        //  $Conn = getDatabaseConnection("event_picture_dump");
-                        //  $sql = "SELECT * FROM upload "; 
-                        //  $stmt = $Conn->query($sql);
-                        //  while($result=mysqli_fetch_array($stmt))
-                        //  {
-                        //      echo '
-                        //             <div class="box">
-                        //                 <img style="width:300px; height:150px;"src="data:image/jpeg;base64,' .base64_encode($result['media'] ) . '" onclick="myFunction(this);"/>
-                        //                 </div>
-                        //                 ';
-                         
-                        //  }
-                        
-                        $db = mysqli_connect("localhost","root","","event_picture_dump"); 
+                        if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
+                            $db = mysqli_connect($url["host"], $url["user"], $url["pass"], substr($url["path"], 1)); 
+                        } 
+                        else
+                            $db = mysqli_connect("localhost","root","","event_picture_dump"); 
                         $sql = "SELECT * FROM upload WHERE 1";
                         $sth = $db->query($sql);
+                        echo "<div id='box'>";
                         while($result=mysqli_fetch_array($sth))
                         {
-                            echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['media'] ).'"/>';
+                            echo "<div>";
+                            echo '<img style="height:300px;width:auto "src="data:image/jpeg;base64,'.base64_encode( $result['media'] ).'"/>';
+                            echo "</div>";
                         }
+                        echo "</div>";
 
                      ?>
                 </div>
@@ -152,3 +147,8 @@
 </body>
 
 </html>
+
+
+<!-- http://fduenez-s19cst336.herokuapp.com/projects/project5/ -->
+<!-- https://github.com/Fduenez/s19cst336/tree/master/projects/project5 -->
+<!--https://s19cst336-frankduenez.c9users.io/s19cst336/projects/project5/ -->
