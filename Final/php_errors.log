@@ -107,3 +107,48 @@ Stack trace:
 #0 /home/ubuntu/workspace/s19cst336/Final/api/insert.php(15): PDO->prepare('INSERT INTO `re...')
 #1 {main}
   thrown in /home/ubuntu/workspace/s19cst336/Final/api/insert.php on line 15
+[13-May-2019 20:09:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:09:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:10:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:12:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:12:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:12:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:12:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:15:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12
+[13-May-2019 20:15:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id=13' in 'where clause'' in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php(12): PDO->prepare('SELECT 1 FROM `...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/s19cst336/Final/api/selectRow.php on line 12

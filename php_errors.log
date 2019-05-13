@@ -4,3 +4,6 @@
 [13-May-2019 03:22:31 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/s19cst336/Final/signOut.php on line 6
 [13-May-2019 03:22:31 UTC] PHP Stack trace:
 [13-May-2019 03:22:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Final/signOut.php:0
+[13-May-2019 21:41:07 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/s19cst336/Final/signOut.php on line 6
+[13-May-2019 21:41:07 UTC] PHP Stack trace:
+[13-May-2019 21:41:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/Final/signOut.php:0

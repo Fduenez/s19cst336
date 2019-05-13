@@ -36,11 +36,11 @@
                 
             </div>
         </div>
-            <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal" tabindex="-1" role="dialog" id="add">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
+                        <h5 class="modal-title">Add</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -70,21 +70,25 @@
             
             
             
-            <div class="modalRemove" tabindex="-1" role="dialog">
+            <div class="modal" tabindex="-1" role="dialog" id="remove">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
+                        <h5 class="modal-title">Remove</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
                           
-                          
+                          <div id="modalStartTime"></div>
+                          <div id="modalEndTime"></div>
+                          <div>
+                              <label>are you sure you want to delete this time slot? this cannot be undone.</label>
+                          </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="Delete">delete</button>
+                        <button type="button" class="btn btn-primary" onClick='deleteSlotButtonClicked()'>delete</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                       </div>
                     </div>
@@ -124,7 +128,7 @@
     
         function addSlot()
         {
-            $('.modal').modal({
+            $('#add').modal({
               keyboard: false
             })
         }
@@ -140,7 +144,7 @@
         }
         
         $(document).ready(function(){
-            
+            $('#remove').modal('hide');
             
                 
             username = "<?php echo $username?>";
@@ -175,29 +179,50 @@
                     console.log(data);
                     for(var i = 0; i < data.length; i++)
                     {
-                        $("#slots").append(" <tr> <td> " + data[i]['date'] + "</td> <td>" + data[i]['start_time'] + "</td> <td>" + data[i]['duration']   + "</td> <td>" +data[i]['bookedBy'] + "</td> <td>  <button type = 'button' id =" + data[i]['id'] + "> Details  </button> <button type = 'button' onClick = 'deleteSlot(" + data[i]['id'] + ")' > Delete  </button> </td> </tr>");
+                        $("#slots").append(" <tr> <td> " + data[i]['date'] + "</td> <td>" + data[i]['start_time'] + "</td> <td>" + data[i]['duration']   + "</td> <td>" +data[i]['bookedBy'] + "</td> <td>  <button type = 'button' onClick = 'deleteSlot(" + data[i]['id'] + ")'> Details  </button> <button type = 'button' onClick = 'deleteSlot(" + data[i]['id'] + ")' > Delete  </button> </td> </tr>");
                         
                     }
                 }
             });
         });
         
-        function deleteSlot(i)
+        function deleteSlotButtonClicked(){
+            console.log("im in boss!");
+            $.ajax({
+                type: "POST",
+                url: "api/deleteRow.php",
+                data: {'id' : identification},
+                dataType: "json",
+                success: function(data, status) 
+                {
+                    
+                }
+            });
+            location.reload();
+            
+        }
+        
+        
+        function deleteSlot(id)
         {
-            console.log(i);
-            identification = i;
-            // $('.modalRemove').modal({
-            //   keyboard: false
-            // })
-            //  $.ajax({
-            //     type: "POST",
-            //     url: "api/deleteRow.php",
-            //     data: {'id': i},
-            //     dataType: "json",
-            //     success: function(data, status) 
-            //     {
-            //     }
-            // });
+
+            identification = id;
+            
+             $.ajax({
+                type: "POST",
+                url: "api/selectRow.php",
+                data: {'id': id},
+                dataType: "json",
+                success: function(data, status) 
+                {
+                    console.log(data);
+                    $('#remove').modal('show');
+                    $("#modalStartTime").append("<p> Start Time " + data[0]['date']  + " " + data[0]['start_time'] + "</p>");
+                    $("#modalEndTime").append("<p> Duration " + data[0]['duration'] + "</p>");
+                    
+                }
+                });
+                
             
             
         }
