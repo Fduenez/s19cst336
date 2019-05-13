@@ -1,19 +1,17 @@
- <?php
+<?php
+
  include 'dbConnection.php';
 
-    $Conn = getDatabaseConnection("event_picture_dump")
- $sql = "SELECT * FROM upload "; 
- $stmt = $dbConn->($sql);
+ $sql = "SELECT * FROM upload WHERE 1";
+ $stmt = $dbConn->prepare($sql);
  $stmt->execute();
 
- $stmt->bindColumn('fileData', $data, PDO::PARAM_LOB);
+ $stmt->bindColumn('media', $data, PDO::PARAM_LOB);
  $record = $stmt->fetch(PDO::FETCH_BOUND);
- 
+
  if (!empty($record)){
-	//specifies the mime type
-    header('Content-Type:' . $record['fileType']);   
+    header('Content-Type:' . $record['fileType']);   //specifies the mime type
     header('Content-Disposition: inline;');
-    echo $data; 
-  } 
-  
- ?>
+    echo $data;
+  }
+?>

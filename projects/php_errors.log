@@ -270,3 +270,26 @@ Stack trace:
 [05-May-2019 07:13:09 UTC] PHP Stack trace:
 [05-May-2019 07:13:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
 [05-May-2019 07:13:09 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:28
+[05-May-2019 20:49:12 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 34
+[05-May-2019 20:49:12 UTC] PHP Stack trace:
+[05-May-2019 20:49:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 20:50:50 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 34
+[05-May-2019 20:50:50 UTC] PHP Stack trace:
+[05-May-2019 20:50:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 20:52:50 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 34
+[05-May-2019 20:52:50 UTC] PHP Stack trace:
+[05-May-2019 20:52:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 20:54:25 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 34
+[05-May-2019 20:54:25 UTC] PHP Stack trace:
+[05-May-2019 20:54:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 20:54:25 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 34
+[05-May-2019 20:54:25 UTC] PHP Stack trace:
+[05-May-2019 20:54:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 21:13:49 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 36
+[05-May-2019 21:13:49 UTC] PHP Stack trace:
+[05-May-2019 21:13:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 21:13:49 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:36
+[05-May-2019 21:23:31 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php on line 38
+[05-May-2019 21:23:31 UTC] PHP Stack trace:
+[05-May-2019 21:23:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:0
+[05-May-2019 21:23:31 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/s19cst336/projects/project5.1/uploadFiles.php:38
