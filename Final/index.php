@@ -205,7 +205,8 @@
         
         function deleteSlot(id)
         {
-
+            $("#modalStartTime").html("");
+            $("#modalEndTime").html("");
             identification = id;
             
              $.ajax({
@@ -229,8 +230,6 @@
         
         $("#save").on('click', function()
         {
-            console.log($("#startTime").val())
-            console.log($("#datepicker").val());
             if($("#datepicker").val() == "")
             {
                 console.log("Error: date required");
